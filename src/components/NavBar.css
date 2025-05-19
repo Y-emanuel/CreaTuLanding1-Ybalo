@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  background-color: #2e2e2e;
+}
+.navbar div strong, .nav-Title{
+  color: #9441ec ;
+  background-color: transparent;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  background-color: transparent ;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6e6e6;
+  background-color: transparent;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
