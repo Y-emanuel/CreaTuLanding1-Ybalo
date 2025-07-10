@@ -1,0 +1,108 @@
+.checkout-container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 3rem 2rem 4rem;
+  color: #c9bfff;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.checkout-container h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0 0 1.6rem;
+  text-shadow:
+    0 0 12px #7d69ff,
+    0 0 20px #00ffe7;
+  animation: glitch 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    text-shadow:
+      2px 0 #00ffe7,
+      -2px 0 #7d69ff,
+      0 0 8px #6a4fff;
+  }
+  50% {
+    text-shadow:
+      4px 0 #7d69ff,
+      -4px 0 #00ffe7,
+      0 0 12px #00ffe7;
+  }
+}
+
+
+.checkout-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.checkout-container label {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: #b5a9ffcc;
+}
+
+.checkout-container input,
+.checkout-container select,
+.checkout-container textarea {
+  background-color: #2a1a4d;
+  border: 2px solid #6a4fff;
+  border-radius: 12px;
+  padding: 0.85rem 1.2rem;
+  font-size: 1rem;
+  color: #d6ccff;
+  font-family: 'Courier New', Courier, monospace;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-container input::placeholder,
+.checkout-container textarea::placeholder {
+  color: #9a8fff88;
+}
+
+.checkout-container input:focus,
+.checkout-container select:focus,
+.checkout-container textarea:focus {
+  outline: none;
+  border-color: #00ffe7;
+  box-shadow: 0 0 12px 3px #00ffe7;
+}
+
+.checkout-container button {
+  margin-top: 1.4rem;
+  background: linear-gradient(90deg, #00ffe7, #6a4fff);
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #120a2a;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ffe7;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.07em;
+}
+
+.checkout-container button:hover {
+  background: linear-gradient(90deg, #00ccad, #7d69ff);
+  box-shadow: 0 0 32px 6px #00ffcc;
+}
+
+@media (max-width: 520px) {
+  .checkout-container {
+    margin: 40px 16px;
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .checkout-container h1 {
+    font-size: 2.2rem;
+  }
+}

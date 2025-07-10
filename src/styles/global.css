@@ -1,0 +1,40 @@
+body {
+  background-color: #1a0033; 
+  color: #b5a9ff; 
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  color: #00ffe7; 
+}
+
+a:hover {
+  color: #7d69ff; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #290066 0%, #1a0033 100%);
+  border-radius: 12px;
+  box-shadow: 0 0 25px #00ffe7cc;
+}
+
+h1, h2, h3, h4 {
+  color: #c4bfff; 
+  text-shadow: 0 0 10px #7d69ff;
+}
+
+button {
+  background-color: #7d69ff;
+  color: #120a2a;
+  font-weight: 700;
+  box-shadow: 0 0 15px #00ffe7;
+}
+
+button:hover:not(:disabled) {
+  background-color: #00ffe7;
+  color: #120a2a;
+  box-shadow: 0 0 30px #7d69ff;
+}

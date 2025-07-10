@@ -1,0 +1,110 @@
+.checkout-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem 2.2rem;
+  background: linear-gradient(135deg, #1a0033, #290066);
+  border-radius: 16px;
+  box-shadow:
+    0 0 12px #00ffe7,
+    inset 0 0 8px #6a4fff;
+  font-family: 'Courier New', Courier, monospace;
+  color: #b5a9ff;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.checkout-form h2 {
+  margin-bottom: 1.8rem;
+  color: #c4bfff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: 0 0 10px #7d69ff;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #a8a1ffcc;
+  letter-spacing: 0.05em;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #6a4fff;
+  border-radius: 12px;
+  background-color: #2a1a4d;
+  color: #d6ccff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.checkout-form input::placeholder {
+  color: #9a8fff88;
+}
+
+.checkout-form input:focus {
+  outline: none;
+  border-color: #00ffe7;
+  box-shadow: 0 0 12px 3px #00ffe7;
+}
+
+.checkout-form button {
+  margin-top: 1.6rem;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #00ffe7, #6a4fff);
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #120a2a;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ffe7;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+  letter-spacing: 0.07em;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+.checkout-form button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #00ccad, #7d69ff);
+  box-shadow: 0 0 32px 6px #00ffcc;
+}
+
+.checkout-form button:disabled {
+  background-color: #7fb5af;
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #c5c3d4;
+}
+
+.checkout-error {
+  color: #e63946;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 6px #e63946cc;
+}
+
+.checkout-success {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #a6f1a6;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 8px #00ff99;
+  background: radial-gradient(circle at top left, #1b0033, #2d0066 90%);
+  border-radius: 20px;
+  box-shadow:
+    0 0 15px #6a4fff,
+    0 0 40px #290066 inset;
+}

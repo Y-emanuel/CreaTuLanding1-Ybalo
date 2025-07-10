@@ -1,0 +1,89 @@
+/* NavBar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #1a0033 0%, #290066 100%);
+  box-shadow: 0 0 15px 3px #6a4fff; 
+  font-family: 'Courier New', Courier, monospace;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__logo h2 {
+  color: #b5a9ff;
+  text-shadow: 0 0 12px #7d69ff;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__link,
+.navbar__link--active {
+  color: #b5a9ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+  user-select: none;
+}
+
+.navbar__link:hover {
+  color: #00ffe7;
+  text-shadow: 0 0 8px #00ffe7;
+}
+
+.navbar__link--active {
+  color: #00ffe7;
+  text-shadow: 0 0 12px #00ffe7;
+  font-weight: 700;
+}
+
+.navbar__cartLink {
+  color: #b5a9ff;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.navbar__cartLink:hover {
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe7;
+  cursor: pointer;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    text-shadow:
+      2px 0 #00ffe7,
+      -2px 0 #7d69ff;
+  }
+  50% {
+    text-shadow:
+      4px 0 #7d69ff,
+      -4px 0 #00ffe7;
+  }
+}
+
+.navbar__logo h2 {
+  animation: glitch 2s infinite alternate;
+}
+
+.navbar__link--active {
+  animation: glitch 3s infinite alternate;
+}
+

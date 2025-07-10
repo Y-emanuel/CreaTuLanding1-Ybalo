@@ -1,0 +1,39 @@
+.cart-widget {
+  position: relative;
+  cursor: pointer;
+  color: #7d69ff; 
+  transition: color 0.3s ease;
+}
+
+.cart-widget:hover {
+  color: #00ffe7;
+}
+
+.cart-widget svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+  filter: drop-shadow(0 0 6px #7d69ff);
+  transition: filter 0.3s ease;
+}
+
+.cart-widget:hover svg {
+  filter: drop-shadow(0 0 12px #00ffe7);
+}
+
+.cart-widget__count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: linear-gradient(135deg, #7d69ff, #00ffe7);
+  color: #120a2a;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 14px;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 0 8px #00ffe7;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 4px #7d69ff;
+}
